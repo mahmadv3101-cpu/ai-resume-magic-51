@@ -14,7 +14,87 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          email: string | null
+          full_name: string | null
+          headline: string | null
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          headline?: string | null
+          id: string
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          headline?: string | null
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      resumes: {
+        Row: {
+          ats_analysis: Json | null
+          ats_score: number | null
+          content: Json
+          created_at: string
+          download_count: number
+          id: string
+          status: string
+          target_job_description: string | null
+          target_role: string | null
+          template: string
+          title: string
+          updated_at: string
+          user_id: string
+          view_count: number
+        }
+        Insert: {
+          ats_analysis?: Json | null
+          ats_score?: number | null
+          content?: Json
+          created_at?: string
+          download_count?: number
+          id?: string
+          status?: string
+          target_job_description?: string | null
+          target_role?: string | null
+          template?: string
+          title?: string
+          updated_at?: string
+          user_id: string
+          view_count?: number
+        }
+        Update: {
+          ats_analysis?: Json | null
+          ats_score?: number | null
+          content?: Json
+          created_at?: string
+          download_count?: number
+          id?: string
+          status?: string
+          target_job_description?: string | null
+          target_role?: string | null
+          template?: string
+          title?: string
+          updated_at?: string
+          user_id?: string
+          view_count?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
