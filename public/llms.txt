@@ -1,0 +1,6 @@
+# ResumeAI Pro
+
+> AI-powered resume builder engineered for ATS algorithms. Generate, score, and export ATS-optimized resumes in under 2 minutes.
+
+## Pages
+- [Home](/): Landing page with features, pricing, templates, and FAQ

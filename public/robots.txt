@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /dashboard
+Disallow: /resumes
+Disallow: /templates
+Disallow: /analytics
+Disallow: /billing
+Disallow: /settings
