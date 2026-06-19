@@ -52,7 +52,7 @@ function NewResumeWizard() {
           title: `${form.targetRole} — Resume`,
           target_role: form.targetRole,
           target_job_description: form.targetJobDescription || null,
-          content,
+          content: content as never,
           status: "complete",
         })
         .select()

@@ -40,7 +40,7 @@ function ResumeEditor() {
 
   const save = useMutation({
     mutationFn: async (patch: Record<string, unknown>) => {
-      const { error } = await supabase.from("resumes").update(patch).eq("id", id);
+      const { error } = await supabase.from("resumes").update(patch as never).eq("id", id);
       if (error) throw error;
     },
     onSuccess: () => {
